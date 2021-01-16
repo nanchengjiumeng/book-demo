@@ -1,6 +1,6 @@
 <template>
   <div id="container" class="container">
-    {{ statusHeight || 1 }}
+    <div :style="{height: statusHeight + 'px'}"></div>
     <div class="bg-blur"></div>
     <Info ref="bookInfo" />
     <Tree class="tree__box" />
@@ -12,18 +12,18 @@
 
 <script>
 // import uniNavBar from "../components/uni-nav-bar/uni-nav-bar.vue";
-import Info from "../components/catalog/Info";
-import Tree from "../components/catalog/tree";
+import Info from '../components/catalog/Info';
+import Tree from '../components/catalog/tree';
 export default {
   components: {
     // uniNavBar,
     Info,
-    Tree
+    Tree,
   },
   data() {
     return {
       scrollTop: 0,
-      statusHeight: 0
+      statusHeight: 0,
     };
   },
   methods: {
@@ -38,7 +38,7 @@ export default {
       const criticalScrollTop = 220;
       const watch = () => {
         let unWatch = this.$watch(
-          "scrollTop",
+          'scrollTop',
           (top, lastTop) => {
             if ((top > 20) & (lastTop < top) && direct === 1) {
               direct = -1;
@@ -56,26 +56,25 @@ export default {
             }
           },
           {
-            immediate: true
+            immediate: true,
           }
         );
       };
       watch();
-    }
+    },
   },
   mounted() {
-    console.log(window.global1.a)
-    this.statusHeight = window.global1.a
-    this.scrollTop = 100;
+    this.statusHeight = this.$plus.navigator.getStatusbarHeight();
+    this.scrollTop = 0;
 
-    const ele = document.querySelector("#container");
+    const ele = document.querySelector('#container');
 
-    ele.addEventListener("scroll", this.onScroll);
+    ele.addEventListener('scroll', this.onScroll);
     this.watchScrollTop();
   },
   destroyed() {
-    this.$refs.container.removeEventListener("scroll", this.onScroll);
-  }
+    this.$refs.container.removeEventListener('scroll', this.onScroll);
+  },
 };
 </script>
 
@@ -108,14 +107,14 @@ export default {
   -ms-filter: blur(60px);
   opacity: 0.3;
   filter: blur(40px);
-  background: url("../assets/image/fengmian.jpg");
+  background: url('../assets/image/fengmian.jpg');
   height: 620px;
   /* border-radius: 0 0 50% 50%; */
 }
 
 .bg-blur:before {
   background-color: rgba(255, 255, 255, 0.3);
-  content: "";
+  content: '';
   width: 100%;
   height: 620px;
   position: absolute;
@@ -169,7 +168,7 @@ export default {
   width: 40px;
   &.icon__back {
     margin-left: 20px;
-    background: url("../static/back.png");
+    background: url('../static/back.png');
     background-size: contain;
   }
 }
