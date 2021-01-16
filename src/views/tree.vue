@@ -1,11 +1,18 @@
 <template>
   <div id="container" class="container">
     <div :style="{height: statusHeight + 'px'}"></div>
+    <div class="nav__bar__box" :style="{top: statusHeight + 'px'}">
+      <NavBar />
+    </div>
     <div class="bg-blur"></div>
     <Info ref="bookInfo" />
     <Tree class="tree__box" />
     <div class="fiexed__bottom">
-      <div class="button__start">开始阅读</div>
+      <van-button class="button__start" @click="$router.push({
+        path: '/ans/0'
+      })">
+      <span>开始阅读</span>
+      </van-button>
     </div>
   </div>
 </template>
@@ -13,10 +20,12 @@
 <script>
 import Info from '../components/catalog/Info';
 import Tree from '../components/catalog/tree';
+import NavBar from '../components/navbar/catalog';
 export default {
   components: {
     Info,
     Tree,
+    NavBar,
   },
   data() {
     return {
@@ -70,9 +79,9 @@ export default {
     ele.addEventListener('scroll', this.onScroll);
     this.watchScrollTop();
   },
-  destroyed() {
-    this.$refs.container.removeEventListener('scroll', this.onScroll);
-  },
+  // de() {
+  //   this.$refs.container.removeEventListener('scroll', this.onScroll);
+  // },
 };
 </script>
 
@@ -82,8 +91,13 @@ export default {
   padding-bottom: 102px;
   overflow-y: scroll;
   box-sizing: border-box;
-  .nav__bar {
+  padding-top: 92px;
+  .nav__bar__box {
+    padding: 0 32px;
     position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 2;
   }
   .tree__box {
     min-height: 200px;
@@ -153,7 +167,7 @@ export default {
     opacity: calc(1);
     transition: opacity 0.1s;
 
-    &.button-hover {
+    &:active {
       margin-top: 2px;
       position: relative;
       opacity: calc(0.7);
