@@ -11,12 +11,10 @@
 </template>
 
 <script>
-// import uniNavBar from "../components/uni-nav-bar/uni-nav-bar.vue";
 import Info from '../components/catalog/Info';
 import Tree from '../components/catalog/tree';
 export default {
   components: {
-    // uniNavBar,
     Info,
     Tree,
   },

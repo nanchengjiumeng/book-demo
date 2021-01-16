@@ -3,12 +3,7 @@
     <div class="header__container">
       <div ref="boxBookInfo" class="box__book__info book_info">
         <div class="book_info_fm" ref="infoFm">
-          <img
-            width="100%"
-            height="100%"
-            src="../../assets/image/fengmian.jpg"
-            @click="previewImage()"
-          />
+          <img width="100%" height="100%" :src="book.coverImage" @click="previewImage()" />
         </div>
         <div class="book__info__item item__title" ref="infoItemTitle">
           <div class="title" ref="title">冀教版数学六年级上册同步练习册</div>
@@ -22,12 +17,14 @@
 </template>
 
 <script type="text/ecmascript-6">
-import anime from "../../utils/anime.es";
+import { ImagePreview } from 'vant';
+import anime from '../../utils/anime.es';
+import fengmia from '../../assets/image/fengmian.jpg';
 export default {
   data() {
     return {
       book: {
-        coverImage: "https://prd.oss.leziedu.com/utils/dianzi/fengmian.jpg",
+        coverImage: fengmia,
       },
       show: true,
     };
@@ -39,15 +36,15 @@ export default {
     generateAnimations() {
       const targetFmOrigin = {
         width: 82 * 0.9,
-        height: 145 * 0.9
+        height: 145 * 0.9,
       };
       const InfoItemMrginLeft = targetFmOrigin.width + 20;
       this.animationInfo = anime.timeline({
         autoplay: false,
         duration: 400,
-        easing: "linear",
+        easing: 'linear',
       });
-      this.$refs.infoFm.style.transform = "translateX(-50%)";
+      this.$refs.infoFm.style.transform = 'translateX(-50%)';
 
       this.animationInfo
         .add(
@@ -115,6 +112,7 @@ export default {
     },
     previewImage() {
       const images = [this.book.coverImage];
+      ImagePreview(images)
     },
   },
 };
