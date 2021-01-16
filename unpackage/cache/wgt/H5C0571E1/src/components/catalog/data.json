@@ -1,0 +1,244 @@
+[
+  {
+    "name": "一 圆和扇形",
+    "pageNum": 0,
+    "children": [
+      {
+        "name": "圆",
+        "pageNum": 1
+      },
+      {
+        "name": "图案设计",
+        "pageNum": 3
+      },
+      {
+        "name": "扇形",
+        "pageNum": 4
+      },
+      {
+        "name": "练习",
+        "pageNum": 5
+      },
+      {
+        "name": "单元综合练习 (一)",
+        "pageNum": 7
+      },
+      {
+        "name": "单元综合练习 (二)",
+        "pageNum": 8
+      }
+    ]
+  },
+  {
+    "name": "二 比和比例",
+    "pageNum": 0,
+    "children": [
+      {
+        "name": "比",
+        "pageNum": 9
+      },
+      {
+        "name": "比例",
+        "pageNum": 11
+      },
+      {
+        "name": "简单应用",
+        "pageNum": 13
+      },
+      {
+        "name": "解决问题",
+        "pageNum": 15
+      },
+      {
+        "name": "练习",
+        "pageNum": 16
+      },
+      {
+        "name": "单元综合练习 (一)",
+        "pageNum": 18
+      },
+      {
+        "name": "单元综合练习 (二)",
+        "pageNum": 22
+      }
+    ]
+  },
+  {
+    "name": "三 百分数",
+    "pageNum": 0,
+    "children": [
+      {
+        "name": "认识百分数",
+        "pageNum": 26
+      },
+      {
+        "name": "求百分数",
+        "pageNum": 28
+      },
+      {
+        "name": "简单应用",
+        "pageNum": 30
+      },
+      {
+        "name": "整理与复习",
+        "pageNum": 32
+      },
+      {
+        "name": "单元综合练习 (一)",
+        "pageNum": 34
+      },
+      {
+        "name": "单元综合练习 (二)",
+        "pageNum": 38
+      }
+    ]
+  },
+  {
+    "name": "四 圆的周长和面积",
+    "pageNum": 0,
+    "children": [
+      {
+        "name": "圆的周长",
+        "pageNum": 42
+      },
+      {
+        "name": "圆的面积",
+        "pageNum": 44
+      },
+      {
+        "name": "简单应用",
+        "pageNum": 30
+      },
+      {
+        "name": "单元综合练习 (一)",
+        "pageNum": 48
+      },
+      {
+        "name": "单元综合练习 (二)",
+        "pageNum": 52
+      }
+    ]
+  },
+  {
+    "name": "五 百分数的应用",
+    "pageNum": 0,
+    "children": [
+      {
+        "name": "一般应用问题",
+        "pageNum": 56
+      },
+      {
+        "name": "折扣",
+        "pageNum": 59
+      },
+      {
+        "name": "成数",
+        "pageNum": 60
+      },
+      {
+        "name": "税收",
+        "pageNum": 61
+      },
+      {
+        "name": "储蓄",
+        "pageNum": 62
+      },
+      {
+        "name": "单元综合练习 (一)",
+        "pageNum": 63
+      },
+      {
+        "name": "单元综合练习 (二)",
+        "pageNum": 67
+      }
+    ]
+  },
+  {
+    "name": "六 比例尺",
+    "pageNum": 0,
+    "children": [
+      {
+        "name": "放大与缩小",
+        "pageNum": 71
+      },
+      {
+        "name": "比例尺",
+        "pageNum": 72
+      },
+      {
+        "name": "单元综合练习 (一)",
+        "pageNum": 77
+      },
+      {
+        "name": "单元综合练习 (二)",
+        "pageNum": 80
+      }
+    ]
+  },
+  {
+    "name": "七 扇形统计图",
+    "pageNum": 0,
+    "children": [
+      {
+        "name": "单元综合练习 (一)",
+        "pageNum": 86
+      },
+      {
+        "name": "单元综合练习 (二)",
+        "pageNum": 87
+      }
+    ]
+  },
+  {
+    "name": "八 探索乐园",
+    "pageNum": 0,
+    "children": [
+      {
+        "name": "单元综合练习 (一)",
+        "pageNum": 90
+      },
+      {
+        "name": "单元综合练习 (二)",
+        "pageNum": 91
+      }
+    ]
+  },
+  {
+    "name": "整理与评价",
+    "pageNum": 0,
+    "children": [
+      {
+        "name": "知识与技能",
+        "pageNum": 92
+      },
+      {
+        "name": "问题与思考",
+        "pageNum": 98
+      },
+      {
+        "name": "自我评价",
+        "pageNum": 100
+      }
+    ]
+  },
+  {
+    "name": "综合练习(一)",
+    "pageNum": 0,
+    "children": [
+      {
+        "name": "综合练习(一)",
+        "pageNum": 101
+      }
+    ]
+  },
+  {
+    "name": "综合练习(二)",
+    "pageNum": 0,
+    "children": [
+      {
+        "name": "综合练习(二)",
+        "pageNum": 106
+      }
+    ]
+  }
+]
